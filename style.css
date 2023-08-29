@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,500&display=swap');
+
+
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background-color: var(--light-gray);
+    
+}
+
+main,
+.left-container, 
+.left-top-container, 
+.left-bottom-container, 
+.user-info-card {
+    display: flex;
+}
+
+.left-container {
+    flex-direction: column;
+}
+
+.user-info, p {
+    color: var(--light-gray);
+}
+
+
+.verified-graduate {
+    opacity: 50%;
+}
+
+p {
+    opacity: 70%;
+    line-height: 1.5;
+    position: relative;
+    bottom: 60px;
+}
+
+.left-container {
+    width: 80%;
+}
+
+.right-container {
+    width: 20%;
+}
+
+main,
+.left-top-container, 
+.left-bottom-container, 
+.left-container {
+    gap: 30px;
+}
+
+h1 {
+    color: var(--white);
+    position: relative;
+    bottom: 50px;
+}
+
+.daniel-clifford-card  {
+    background-color: var(--moderate-violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 10% right 20%;
+}
+
+.jonathan-walters-card {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.jeanette-harmon-card, .right-container {
+    background-color: var(--white);
+}
+
+.patrick-abrams-card {
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.jeanette-harmon-card h1,
+.right-container h1,
+.jeanette-harmon-card h2,
+.right-container h2,
+.jeanette-harmon-card .verified-graduate,
+.right-container .verified-graduate,
+.jeanette-harmon-card p,
+.right-container p {
+    color: var(--very-dark-blackish-blue);
+}
+
+
+.left-top-card, 
+.left-bottom-card, 
+.right-container {
+    border-radius: 20px;
+    padding: 30px;
+    transition: transform 0.2s;
+}
+
+.left-top-card:hover, 
+.left-bottom-card:hover, 
+.right-container:hover {
+    transform: scale(1.1);
+    
+}
+
+.user-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.daniel-clifford-card {
+    width: 70%;
+    height: 87%;
+}
+
+.jonathan-walters-card {
+    width: 30%;
+    height: 87%;
+}
+
+.user-info {
+    position: relative;
+    bottom: 20px;
+}
+
+.verified-graduate {
+    position: relative;
+    bottom: 15px;
+}
+
+.jeanette-harmon-card {
+    width: 40%;
+    height: 87%;
+}
+
+.patrick-abrams-card {
+    width: 70%;
+    height: 87%;
+}
+
+.right-container p {
+    width: 80%;
+    position: relative;
+    bottom: 30px;
+}
+
+.attribution { 
+    font-size: 15px;
+    text-align: center;
+    
+
+ }
+.attribution a { 
+    color: var(--moderate-violet);
+    text-decoration: none;
+    
+ }
+
+@media screen and (max-width: 768px) {
+    main,
+    .left-container, 
+    .left-top-container, 
+    .left-bottom-container, 
+    .user-info-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-top-card, .left-bottom-card {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 81%;
+    }
+
+    .right-container p {
+        width: 100%;
+    }
+
+    .user-info {
+        left: 70px;
+        bottom: 30px;
+    }
+
+    .user-pic {
+        position: relative;
+        top: 35px;
+        left: 10px;
+    }
+
+    .left-top-card:hover, 
+    .left-bottom-card:hover, 
+    .right-container:hover {
+    transform: none;
+    
+}
+}
